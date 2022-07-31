@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(247, 247, 247);
+}
+
+.principal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+}
+
+.celular-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.celular-img img{
+    height: 45rem;
+}
+
+.elemento-geral{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 25%;
+    height: 35rem;
+}
+
+.design-elementos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 5px 0;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 1.5rem;
+}
+
+.dados-login{
+    min-height: 24rem;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.logo{
+    margin-top: 2.5rem;
+    height: 5rem;
+}
+
+.dados{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-content: space-between;
+}
+
+.dados input{
+    width: 100%;
+    margin-bottom: 0.5rem;
+    height: 2rem;
+    font-size: 12px;
+    padding: 3px;
+    border: 1px solid lightgray;
+    background-color: rgb(247, 247, 247);
+    color: lightgray;
+}
+
+.dados .login{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1rem;
+    text-decoration: none;
+    background-color: #0095f6;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.dados .detalhe{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.detalhe hr{
+    width: 60%;
+    border: none;
+    background-color: lightgray;
+    height: 1px;
+}
+
+.detalhe p{
+    margin-right: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+    color: gray;
+}
+
+.logar-facebook{
+    width: 100%;
+    align-items: center;
+}
+
+.logar-facebook button{
+    width: 100%;
+    background: none;
+    border: none;
+    margin-top: 1rem;
+    color: #385185;
+    font-weight: bold;
+}
+
+.logar-facebook button:hover{
+    cursor: pointer;
+}
+
+button span{
+    margin-left: 5px;
+}
+
+.esqueceu-senha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.esqueceu-senha a{
+    color: #00376b;
+    font-size: 12px;
+}
+
+
+.acessibilidade p{
+    font-size: 15px;
+}
+
+.acessibilidade p a{
+    font-weight: bold;
+    color: #0095f6;
+}
+
+.baixar-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.botoes{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-store-btn{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+    background-image: url('./imgs/appstore-img.png');
+}
+
+.play-store-btn{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+    background-image: url('./imgs/playstore-img.png');
+}
+
+
+/*Responsividade*/
+
+@media (max-width: 1600px) {
+    .principal{
+        width: 80%;
+    }
+
+    .celular-img{
+        width: 40%;
+    }
+
+    .elemento-geral{
+        width: 40%;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .principal{
+        width: 50%;
+    }
+
+    .celular-img{
+        width: 25%;
+    }
+
+    .elemento-geral{
+        width: 25%;
+    }
+}
+
+
+@media (max-width: 620px) {
+    body{
+        background-color: #fff;
+    }
+
+    .design-elementos{
+        border: none;
+    }
+
+    .principal {
+        width: 90%;
+    }
+
+    .celular-img{
+        display: none;
+    }
+
+    .elemento-geral{
+        width: 90%;
+    }
+}
